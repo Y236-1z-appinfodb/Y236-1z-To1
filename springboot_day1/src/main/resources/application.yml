@@ -1,0 +1,37 @@
+
+
+user:
+   age: 20
+   boss: false
+   map: {v1: 22, v2: hh}
+   list:
+     - 1
+     - 2
+     - h
+     - e
+     - l
+     - l
+     - o
+   dog:
+     name: huangdan
+     age: 5
+   birth: 2000/1/17
+   last-name: 沈野
+
+server:
+  port: 1000
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8084
+spring:
+  profiles: prod  #指定属于哪个环境
+
